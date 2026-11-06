@@ -1,0 +1,59 @@
+====================================
+       LINUX SYSTEM HEALTH REPORT
+====================================
+
+Hostname:
+synnefo-lab
+
+Current Date and Time:
+Fri Nov  6 05:20:58 PM IST 2026
+
+CPU Information:
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           40 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  2
+On-line CPU(s) list:                     0,1
+Vendor ID:                               GenuineIntel
+Model name:                              Intel Core Processor (Haswell, no TSX)
+CPU family:                              6
+Model:                                   60
+Thread(s) per core:                      1
+Core(s) per socket:                      2
+Socket(s):                               1
+Stepping:                                1
+BogoMIPS:                                4799.99
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       456Mi       157Mi        19Mi       1.5Gi       1.5Gi
+Swap:             0B          0B          0B
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        50G  2.0G   45G   5% /
+devtmpfs        988M     0  988M   0% /dev
+tmpfs           991M     0  991M   0% /dev/shm
+tmpfs           397M   20M  378M   5% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+tmpfs           199M  4.0K  199M   1% /run/user/1000
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+
+Top Running Processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+nomad      29115  200  0.2  10068  4784 pts/0    R+   17:20   0:00 ps aux --sort=-%cpu
+root       27497  0.0  2.4 2044808 50728 ?       Ssl  08:41   0:12 /usr/bin/containerd
+nomad      28638  0.0  0.4  15800  8176 ?        S    16:19   0:00 sshd-session: nomad@pts/0
+root       27505  0.0  4.8 2535588 98036 ?       Ssl  08:41   0:04 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+nomad      28643  0.0  0.2   7472  4476 pts/0    Ss   16:19   0:00 -bash
+root       26238  0.0  1.3 256908 27068 ?        Ssl  08:33   0:02 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
+root       28627  0.0  0.5  15704 10760 ?        Ss   16:19   0:00 sshd-session: nomad [priv]
+root       28606  0.0  0.0      0     0 ?        I    16:19   0:00 [kworker/1:0-virtio_vsock]
+root       28690  0.0  0.0      0     0 ?        I    16:20   0:00 [kworker/0:3-events]
+root       29044  0.0  0.0      0     0 ?        I    17:04   0:00 [kworker/0:1-cgroup_free]
+
+====================================
+          REPORT COMPLETED
+====================================
